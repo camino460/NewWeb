@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 40px; /* Abstand zu den Rändern */
+    background: #121212;
+    display: flex;
+    justify-content: center; /* horizontal zentrieren */
+    align-items: flex-start;  /* oben anfangen */
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Abstand zwischen den Containern */
+    align-items: center; /* zentriert die Boxen horizontal */
+  }
+  
+  /* Gemeinsame Styles für alle Container */
+  #container1, 
+  #container2, 
+  #container3, 
+  #container4, 
+  #container5, 
+  #container6, 
+  #container7 {
+    background: #1c1f2b;
+    color: rgba(240, 248, 255, 0.8);
+    padding: 0.2em 0.4em;
+    border-radius: 5px;
+    font-size: 2em;
+    font-weight: bold;
+    display: inline-block;
+  }
+  
+  /* Spezieller Stil für container1 */
+  #container1 {
+    background: #373f5e;
+    color: rgba(201, 224, 244, 0.8);
+    font-size: 5em;
+  }
+  
+  /* Fade-In-Animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  #container2, #container3, #container4 {
+    animation: fadeIn 10s ease-in-out;
+  }
+  
+  /* Dreh-Animation */
+  @keyframes drehen {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Drehung für bestimmte Container */
+  #container1,
+  #container5,
+  #container6,
+  #container7 {
+    animation: drehen 1s linear infinite;
+    animation-delay: 0s;
+  }
+  
+  
