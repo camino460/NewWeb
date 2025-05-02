@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #121212;
+    }
+
+    /* Link-Button als Block */
+    .button-block {
+      text-decoration: none; /* entfernt Unterstreichung */
+    }
+
+    .outer {
+      position: relative;
+      display: inline-block;
+      border-radius: 13px;
+      padding: 3px;
+      background-image: conic-gradient(red, blue, green, yellow, orange, purple, red);
+      transition: transform 0.2s ease;
+    }
+
+    .outer:hover {
+      transform: scale(1.05); /* leichte Vergrößerung beim Hover */
+    }
+
+    .inner {
+      background: #1c1f2b;
+      color: rgba(240, 248, 255, 0.8);
+      padding: 20px 30px;
+      border-radius: 10px;
+      font-size: 2em;
+      font-weight: bold;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <a href="NEWNEW.html" class="button-block" target="_blank">
+    <div class="outer">
+      <div class="inner">🍆🍆Nicolin🍆🍆</div>
+    </div>
+  </a>
+</body>
+</html>
